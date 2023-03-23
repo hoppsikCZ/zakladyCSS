@@ -1,0 +1,119 @@
+/* CSS Document */
+body {
+  /* Typ písma bude Arial nebo sans-serif */
+  font-family: Arial, sans-serif;
+  /* Barva pozadí bude světle šedá */
+  background-color: lightgray;
+}
+
+/* Selektor pro oddíl označený ID obal */ div#obal {
+  /* Maximální šířka 960 px */
+  max-width: 960px;
+  /* Nastav okraje tak, aby byl blok obal na stránce vycentrován */
+  
+  /* Ohraničení - plná šedá čára o tloušťce 1 pixel  */
+  border-color: gray;
+  border-style: solid;
+  border-width: 1px;
+  /* Vnitřní odsazení - 20 pixelů */
+  padding: 20px;
+  /* Bílá barva pozadí */
+  background-color: white;
+  /* Barva textu - tmavě šedý odstín, šestnáctkové hodnoty 3 */
+  color: rgb(33,33,33);
+}
+
+/* Selektor pro značku nav */ nav {
+  background-color: #222;
+  margin: -20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 1.1em;
+  color: lightgray;
+}
+
+/* Pro všechny odkazy v bloku navigace */ nav a{
+  padding: 19px;
+  /* Odkazy nebudou podtrženy */
+  text-decoration: none;
+  color: lightgray;
+}
+
+/* Pro všechny odkazy v bloku navigace při přejetí kurzoru myši */ nav a:hover {
+  color: white;
+  background-color: rgb(0,153,204);
+}
+
+h1 {
+  /* Nadpis bude vycentrován */
+  text-align: center;
+  /* Velikost nadpisu bude dvojnásobná vzhledem k základní velikosti písma */
+  font-size: 200%;
+  /* Nadpis bude tučný */
+  font-weight: bold;
+  /* Barva nadpisu bude totožná s barvou zvýrazněného odkazu */
+  color: rgb(0,153,204);
+  /* Nadpis bude vypsán velkými písmeny */
+  text-transform: uppercase;
+  /* Výška řádku nadpisu bude 2em */
+  line-height: 2em;
+}
+
+/* Platí pro nadpisy h2 i h3 */ h2, h3 {
+  font-weight: 200; 
+  line-height: 2em;
+}
+
+h2 {
+  font-size: 1.6em;
+  color: rgb(102,153,0);
+}
+
+h3 { 
+  font-size: 1.2em;
+  /* Nadpisy budou podtrženy tenkou tečkovanou čarou, jejíž barva bude shodná s barvou písma */ 
+  text-decoration: dotted;
+  text-decoration-line: underline;
+  text-decoration-color: rgb(33,33,33);
+  text-decoration: ;
+}
+
+p, li {
+  line-height: 1.5em;
+  /* Horní a spodní okraj odstavců i odrážek budou odsazeny o hodnotu 1em */
+}
+
+p {
+  /* Text odstavců bude zarovnán do bloku */
+}
+
+li {
+  /* Nastavte styl odrážek tak, aby odpovídal předloze (čtvercová odrážka) */
+  list-style-position: outside;
+  margin-left: 20px;
+}
+
+/* Nastavte pravidlo pro všechny tučně a modře zvýrazněné texty v odrážkách. */
+
+/* Nastavte pravidlo pro všechny odstavce-poznámky: 
+    * na levém okraji bude šedé ohraničení 10px silné
+    * text bude zleva odsazen o 50 pixelů
+    * použitý font bude o 10% menší než základní písmo
+    * písmo bude nakloněné (kurzíva)
+*/
+
+footer {
+  color: gray;
+  margin: 10px auto;
+  /* Zápatí bude zarovnáno na střed */
+  font-size: 80%;
+}
+
+strong {
+  font-weight: bold;
+}
+
+
+/* Nastavte pravidla pro značky vložené do textu úvodního odstavce,
+   aby konečný vzheld textu odpovídal předloze. */
+
