@@ -10,7 +10,7 @@ body {
   /* Maximální šířka 960 px */
   max-width: 960px;
   /* Nastav okraje tak, aby byl blok obal na stránce vycentrován */
-  
+  margin: auto;
   /* Ohraničení - plná šedá čára o tloušťce 1 pixel  */
   border-color: gray;
   border-style: solid;
@@ -72,28 +72,33 @@ h2 {
 h3 { 
   font-size: 1.2em;
   /* Nadpisy budou podtrženy tenkou tečkovanou čarou, jejíž barva bude shodná s barvou písma */ 
-  text-decoration: dotted;
-  text-decoration-line: underline;
-  text-decoration-color: rgb(33,33,33);
-  text-decoration: ;
+  border-bottom: 1px dotted rgb(33,33,33);
 }
 
 p, li {
   line-height: 1.5em;
   /* Horní a spodní okraj odstavců i odrážek budou odsazeny o hodnotu 1em */
+  margin: 1em;
 }
 
 p {
   /* Text odstavců bude zarovnán do bloku */
+  text-align: justify;
 }
 
 li {
   /* Nastavte styl odrážek tak, aby odpovídal předloze (čtvercová odrážka) */
   list-style-position: outside;
   margin-left: 20px;
+  list-style-type: square;
 }
 
 /* Nastavte pravidlo pro všechny tučně a modře zvýrazněné texty v odrážkách. */
+li > b {
+   font-weight: bold;
+   color: rgb(0,153,204);
+}
+
 
 /* Nastavte pravidlo pro všechny odstavce-poznámky: 
     * na levém okraji bude šedé ohraničení 10px silné
@@ -101,6 +106,13 @@ li {
     * použitý font bude o 10% menší než základní písmo
     * písmo bude nakloněné (kurzíva)
 */
+
+p.poznamka {
+  border-left: solid 10px gray;
+  padding-left: 50px;
+  font-size: 90%;
+  font-style: italic;
+}
 
 footer {
   color: gray;
@@ -113,7 +125,24 @@ strong {
   font-weight: bold;
 }
 
-
+footer > p{
+  text-align: center;
+}
 /* Nastavte pravidla pro značky vložené do textu úvodního odstavce,
    aby konečný vzheld textu odpovídal předloze. */
+
+   p:first-of-type > abbr{
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: red;
+  }
+
+  p:first-of-type > mark{
+    background-color: green;  
+    color: white;
+  }
+
+  p:first-of-type > code{
+    font-weight: bold;
+  }
 
